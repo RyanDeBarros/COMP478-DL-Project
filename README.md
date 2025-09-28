@@ -23,6 +23,7 @@ Person D (Feature Extraction & Report Lead) – experiments on rotation-invarian
 
 
 ## 📂 Repository Structure
+'''
 COMP478-DL-Project/
 │── notebooks/ # Jupyter notebooks for experiments & demos
 │ ├── features_rotation_test.ipynb
@@ -37,7 +38,7 @@ COMP478-DL-Project/
 │── requirements.txt # Python dependencies
 │── README.md # Project description & instructions
 │── .gitignore
-
+'''
 
 ## ⚙️ Setup Instructions
 1. Clone the repository
@@ -59,7 +60,6 @@ DOTA (subset): Dataset for Object Detection in Aerial Images (multi-class rotate
 
 (We will start with HRSC2016 due to smaller size and easier training.)
 
-)
 
 ## 🚀 Project Goals
 
@@ -72,6 +72,7 @@ Extend to predict rotated bounding boxes.
 Evaluate rotation-invariance of features (HOG / CNN).
 
 Compare baseline vs rotated detectors.
+
 
 
 
