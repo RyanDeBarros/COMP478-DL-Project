@@ -22,20 +22,20 @@ Person C (RoI Transformation Lead) – implements horizontal-to-rotated bounding
 Person D (Feature Extraction & Report Lead) – experiments on rotation-invariant features (HOG / CNN), creates plots & leads report writing.
 
 
-📂 Repository Structure
+## 📂 Repository Structure
 COMP478-DL-Project/
-│── notebooks/                # Jupyter notebooks for experiments & demos
-│   ├── features_rotation_test.ipynb
+│── notebooks/ # Jupyter notebooks for experiments & demos
+│ ├── features_rotation_test.ipynb
 │
-│── src/                      # Source code for detectors, RoI transforms, etc.
+│── src/ # Source code for detectors, RoI transforms, etc.
 │
-│── data/                     # (gitignored) Dataset storage (HRSC2016/DOTA subset)
+│── data/ # (gitignored) Dataset storage (HRSC2016/DOTA subset)
 │
-│── docs/                     # Documentation & report drafts
-│   ├── report_outline.md
+│── docs/ # Documentation & report drafts
+│ ├── report_outline.md
 │
-│── requirements.txt          # Python dependencies
-│── README.md                 # This file
+│── requirements.txt # Python dependencies
+│── README.md # Project description & instructions
 │── .gitignore
 
 
@@ -72,5 +72,6 @@ Extend to predict rotated bounding boxes.
 Evaluate rotation-invariance of features (HOG / CNN).
 
 Compare baseline vs rotated detectors.
+
 
 
