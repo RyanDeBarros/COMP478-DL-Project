@@ -2,7 +2,7 @@ COMP478-DL-Project
 
 Term Project – COMP478: Deep Learning for Image Processing
 
-📌 Project Title
+## 📌 Project Title
 
 Implementation of concepts from the paper:
 “Learning RoI Transformer for Oriented Object Detection in Aerial Images”
@@ -11,7 +11,7 @@ by Jian Ding, Nan Xue, Yang Long, Gui-Song Xia, Qikai Lu (CVPR 2019).
 Paper PDF (CVPR 2019)
 
 
-👥 Team Members & Roles
+## 👥 Team Members & Roles
 
 Person A (Dataset & Evaluation Lead) – prepares datasets, splits, and evaluation metrics (IoU, mAP).
 
@@ -39,7 +39,7 @@ COMP478-DL-Project/
 │── .gitignore
 
 
-⚙️ Setup Instructions
+## ⚙️ Setup Instructions
 1. Clone the repository
 git clone https://github.com/RyanDeBarros/COMP478-DL-Project.git
 cd  .\COMP478-DL-Project\
@@ -52,7 +52,7 @@ conda activate roi-transformer
 pip install -r requirements.txt
 
 
-📊 Datasets
+## 📊 Datasets
 HRSC2016: High-Resolution Ship Collection (ships with oriented bounding boxes).
 
 DOTA (subset): Dataset for Object Detection in Aerial Images (multi-class rotated objects).
@@ -61,7 +61,7 @@ DOTA (subset): Dataset for Object Detection in Aerial Images (multi-class rotate
 
 )
 
-🚀 Project Goals
+## 🚀 Project Goals
 
 Implement and visualize Horizontal → Rotated RoI transformation.
 
@@ -72,6 +72,7 @@ Extend to predict rotated bounding boxes.
 Evaluate rotation-invariance of features (HOG / CNN).
 
 Compare baseline vs rotated detectors.
+
 
 
 
