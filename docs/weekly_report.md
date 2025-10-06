@@ -7,7 +7,7 @@
 - Muhammad Ashar  
 - Harshil Prajapati  
 
-**Week 2 – October 6, 2025**  
+**Week 6 – October 6, 2025**  
 **Meeting Time:** 4:00 PM  
 
 ---
