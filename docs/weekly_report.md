@@ -7,7 +7,7 @@
 - Muhammad Ashar  
 - Harshil Prajapati  
 
-**Week 6 – October 6, 2025**  
+**Week 7 – October 13, 2025**  
 **Meeting Time:** 4:00 PM  
 
 ---
@@ -17,47 +17,50 @@
 ### ✅ Summary of Progress
 | Member | Work Completed |
 |---------|----------------|
-| **Harshil (Dataset & Evaluation Lead)** | • Downloaded and preprocessed the HRSC2016 dataset (split into train/val/test).<br>• Started implementing evaluation metrics (IoU, mAP) for horizontal and rotated boxes. |
-| **Ashar (Baseline Detector Lead)** | • Trained and validated YOLO baseline model on two dataset splits.<br>• Collected baseline accuracy, precision, recall, and visualization samples. |
-| **Ryan (RoI Transformation Lead)** | • Completed environment setup (Python, PyTorch, OpenCV, Ultralytics).<br>• Reviewed RoI Transformer paper and clarified integration with the baseline detector. |
-| **Sassan (Feature Extraction & Report Lead)** | • Assisted with setup and dataset access.<br>• Began structuring project report (introduction and methodology sections). |
+| **Harshil (Dataset & Evaluation Lead)** | • Completed dataset setup for **HRSC2016** and **DOTA** (train/val/test splits).<br>• Began integrating evaluation metrics (**IoU**, **mAP**) for horizontal and rotated boxes. |
+| **Ashar (Baseline Detector Lead)** | • Trained and validated **YOLOv5** baseline model on two dataset splits.<br>• Collected and documented baseline results (accuracy, precision, recall, confusion matrix). |
+| **Ryan (RoI Transformation Lead)** | • Set up Google Colab environment with all dependencies (PyTorch, Ultralytics, OpenCV, Pandas, etc.).<br>• Implemented dataset consistency checks and conversion scripts (HRSC XML → YOLO, DOTA TXT → YOLO).<br>• Structured YOLO directories and generated configuration files (`.yaml`).<br>• Launched baseline **YOLOv5** training on HRSC and DOTA.<br>• Clarified dataset preprocessing: normalization of bounding boxes removes the need for manual resizing, as YOLO automatically handles image scaling during training. |
+| **Sassan (Feature Extraction & Report Lead)** | • Structured the **project report in LaTeX**, drafting full *Introduction* and *Methodology* sections.<br>• Incorporated clarification on YOLO’s coordinate normalization in the Methodology section.<br>• Prepared a plan for **feature extraction analysis** (HOG and CNN embeddings) to compare **HBB vs. RRoI** detections once rotation outputs are ready. |
 
 ---
 
 ## 💬 Meeting Notes
-- Confirmed **HRSC2016** as the main dataset for baseline and RoI transformation tests.  
-- Decided to finalize baseline detector using **YOLOv8** before implementing rotation.  
-- Discussed pipeline flow: baseline → HBB→RRoI transformation → feature extraction → evaluation.
+- Confirmed **HRSC2016** as the primary dataset for baseline and rotation testing.  
+- Discussed finalizing baseline detector training before implementing the **RoI Transformation** module.  
+- Clarified that **manual resizing** of images is unnecessary since YOLO normalizes coordinates and automatically resizes input images at runtime.  
+- Outlined the next steps for rotation-aware detection, feature analysis, and report progress tracking.  
 
 ---
 
-## 🔮 Week 3 Plan
+## 🔮 Week 8 Plan
 
 ### 🎯 Group Goals
-- Complete baseline evaluation (mAP, IoU, confusion matrix).  
-- Implement and test **RoI Transformation** functions.  
-- Create visual comparisons between **HBB vs. RRoI** detections.  
-- Continue drafting report (Methodology & Dataset sections).
+- Finalize **YOLO baseline results** (mAP, IoU, precision–recall).  
+- Implement and test **RoI Transformation** using `cv2.minAreaRect` and `cv2.boxPoints`.  
+- Begin **feature extraction and visualization** workflow for HBB outputs.  
+- Continue report development (Results & Discussion section outline).  
 
 ### 👥 Member Tasks
 | Member | Next Steps |
 |---------|------------|
-| **Harshil** | • Finalize evaluation metric implementation.<br>• Generate plots for precision–recall and mAP curves. |
-| **Ashar** | • Train remaining dataset splits.<br>• Provide final YOLO model weights and inference outputs for testing. |
-| **Ryan** | • Implement HBB→RRoI conversion using `cv2.minAreaRect` and `cv2.boxPoints`.<br>• Visualize rotated bounding boxes and export transformed object patches. |
-| **Sassan** | • Compare feature embeddings between HBB and RRoI patches (HOG/CNN).<br>• Expand “Methodology” section in report. |
+| **Harshil** | • Complete evaluation metrics for rotated bounding boxes.<br>• Generate plots for precision–recall and mAP comparisons. |
+| **Ashar** | • Finalize YOLOv5 training across all dataset splits.<br>• Export trained model weights and inference samples for RRoI testing. |
+| **Ryan** | • Implement and test **HBB→RRoI conversion** using OpenCV geometry methods.<br>• Visualize and validate rotated bounding boxes on HRSC images. |
+| **Sassan** | • Begin **feature extraction** from baseline YOLO detections (HOG and CNN embeddings).<br>• Create visualizations (PCA/t-SNE) to assess class clustering.<br>• Extend **LaTeX report** with *Results & Discussion* section framework. |
 
 ---
 
 ## ⚠️ Risks & Notes
-- Dataset size (~8 GB) may slow training or evaluation on limited hardware.  
-- Ensure consistent naming between YOLO outputs and evaluation scripts to streamline integration.
+- Large dataset size (~8 GB) may increase training time on limited GPU resources.  
+- Team should maintain consistent file and label naming to ensure smooth integration between YOLO outputs and RoI transformation scripts.  
+- Rotation-based training may require additional validation to avoid coordinate misalignment errors.  
 
 ---
 
-## 📦 Deliverables for Week 3 Meeting
-1. Final baseline results (accuracy, mAP, precision/recall).  
-2. Working RoI Transformation script with visual samples.  
-3. Updated project report (Methodology + Dataset sections).  
+## 📦 Deliverables for Week 8 Meeting
+1. Final YOLOv5 baseline metrics (accuracy, mAP, precision/recall).  
+2. Initial **RoI Transformation** visual samples (rotated bounding boxes).  
+3. Early **feature extraction notebook** comparing HBB feature representations.  
+4. Updated LaTeX report (Introduction, Methodology, Results structure).  
 
 ---
