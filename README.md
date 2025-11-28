@@ -105,3 +105,6 @@ MODEL_SAVE_PATH = Path("drive/MyDrive/Colab Notebooks/Models")
 The file structure matches the references the exact way so that if any folder is named differently, the code breaks.
 The dataset rejects annotations or images that are not paired.
 
+Link: https://drive.google.com/drive/folders/1dhRhgjUKX2C4JHF1E-LpaCIr9wRXlNmz?usp=drive_link
+
+
