@@ -50,7 +50,7 @@ drive.mount('/content/drive')
 SHARED_PATH = Path("drive/MyDrive/Colab Notebooks/Shared")
 
 The link will have a specific order with the following folders inside:
-
+```
 MyDrive/
 └── Colab Notebooks/
     └── Shared/
@@ -96,7 +96,7 @@ MyDrive/
         │
         └── Notebook Files/
             └── our_training_notebook.ipynb
-
+```
 The Models/ structure will be created once the model is running the epochs.
 
 The model instantiation uses the path:
